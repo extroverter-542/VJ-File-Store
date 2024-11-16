@@ -18,13 +18,13 @@ def is_enabled(value, default):
         return default
       
 # Bot Information
-API_ID = int(environ.get("API_ID", ""))
-API_HASH = environ.get("API_HASH", "")
+API_ID = int(environ.get("API_ID", "22281455"))
+API_HASH = environ.get("API_HASH", "dc3bf5521f4cd885f20e1fdd6aadd0ba")
 BOT_TOKEN = environ.get("BOT_TOKEN", "")
 
-PICS = (environ.get('PICS', 'https://graph.org/file/ce1723991756e48c35aa1.jpg')).split() # Bot Start Picture
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
+PICS = (environ.get('PICS', 'https://envs.sh/L6K.jpg')).split() # Bot Start Picture
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7162615398 7827448605 1683225887').split()]
+BOT_USERNAME = environ.get("BOT_USERNAME", "Huhuhihihehe_Bot") # without @
 PORT = environ.get("PORT", "8080")
 
 # Clone Info :-
@@ -35,8 +35,8 @@ CLONE_DB_URI = environ.get("CLONE_DB_URI", "")
 CDB_NAME = environ.get("CDB_NAME", "clonetechvj")
 
 # Database Information
-DB_URI = environ.get("DB_URI", "")
-DB_NAME = environ.get("DB_NAME", "techvjbotz")
+DB_URI = environ.get("DB_URI", "mongodb+srv://sagatobots00001:sagatobots100@cluster00001.vgdshkw.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME = environ.get("DB_NAME", "Huhuhihihehe_Bot")
 
 # Auto Delete Information
 AUTO_DELETE_MODE = bool(environ.get('AUTO_DELETE_MODE', True)) # Set True or False
@@ -46,7 +46,7 @@ AUTO_DELETE = int(environ.get("AUTO_DELETE", "30")) # Time in Minutes
 AUTO_DELETE_TIME = int(environ.get("AUTO_DELETE_TIME", "1800")) # Time in Seconds
 
 # Channel Information
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", ""))
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002447072131"))
 
 # File Caption Information
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", f"{script.CAPTION}")
@@ -59,15 +59,15 @@ PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 VERIFY_MODE = bool(environ.get('VERIFY_MODE', False)) # Set True or False
 
 # If Verify Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-SHORTLINK_URL = environ.get("SHORTLINK_URL", "api.shareus.io") # shortlink domain without https://
-SHORTLINK_API = environ.get("SHORTLINK_API", "hRPS5vvZc0OGOEUQJMJzPiojoVK2") # shortlink api
-VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/How_To_Open_Linkl") # how to open link 
+SHORTLINK_URL = environ.get("SHORTLINK_URL", "inshorturl.com") # shortlink domain without https://
+SHORTLINK_API = environ.get("SHORTLINK_API", "b83fdd727060c59a43b9b9b063dcee500190de3d") # shortlink api
+VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/+OZTI8EghvmxmMTll") # how to open link 
 
 # Website Info:
 WEBSITE_URL_MODE = bool(environ.get('WEBSITE_URL_MODE', True)) # Set True or False
 
 # If Website Url Mode Is True Then Fill All Required Variable, If False Then Don't Fill.
-WEBSITE_URL = environ.get("WEBSITE_URL", "") # For More Information Check Video On Yt - @Tech_VJ
+WEBSITE_URL = environ.get("WEBSITE_URL", "https://anime-flux-hindi-sub.blogspot.com/2024/11/watch-hindi-sub-anime-adsfree-on.html") # For More Information Check Video On Yt - @Tech_VJ
 
 # File Stream Config
 STREAM_MODE = bool(environ.get('STREAM_MODE', True)) # Set True or False
@@ -80,7 +80,7 @@ if 'DYNO' in environ:
     ON_HEROKU = True
 else:
     ON_HEROKU = False
-URL = environ.get("URL", "https://testofvjfilter-1fa60b1b8498.herokuapp.com/")
+URL = environ.get("URL", "")
 
 
 # Don't Remove Credit Tg - @VJ_Botz
